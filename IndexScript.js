@@ -7,11 +7,6 @@ function recent(json) {
     document.write('</style>');
     
     document.write('');
-    document.write('');
-        document.write('');
-        document.write('');
-        document.write('');
-    
     
     var n = 1;
     for (var i = 0; i < numposts; i++) {
@@ -34,7 +29,6 @@ function recent(json) {
             thumburl = entry.media.url;
         } catch (error)
 
-
         {
             s = entry.content.$t;
             a = s.indexOf("<img");
@@ -44,9 +38,7 @@ function recent(json) {
             if ((a != -1) && (b != -1) && (c != -1) && (d != "")) {
                 thumburl = d;
             } else thumburl = 'http://2.bp.blogspot.com/-fyukB_HLG_w/UbManI7ySAI/AAAAAAAADsM/brwpVvFPtOM/s1600/nothumb.jpg';
-
         }
-
 
         if (showpostthumbnails == true)
           if ( i < json.feed.entry.length - 1 ) {
@@ -77,15 +69,12 @@ function recent(json) {
               document.write('</td>' + '</tr>' + '</tbody>' + '</table>');
           }
 
-
         var towrite = '';
         var flag = 0;
-
 
         document.write('<div class="fix"></div>');
         //if (displayseparator == true)
         //    if (i != (numposts - 1))
         //        document.write('');
     }
-
 }
