@@ -3,7 +3,7 @@ function recent(json) {
     document.write('.sitemap-container {width: 100%;}');
     document.write('.sitemap-container:hover {background-color:#fafafa;}');
     document.write('.thumbnail {width: ' + thumbWidth + '; height: ' + thumbHeight + '; float: center; top:0px;}');
-    document.write('.posttitle {padding-top: 1px; vertical-align: top; font-size: small;}');
+    document.write('.posttitle {padding-top: 15px; vertical-align: top; font-size: small;}');
     document.write('</style>');
     
     document.write('');
