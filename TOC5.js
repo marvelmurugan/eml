@@ -1,6 +1,7 @@
 // Blogger Recent Posts Gallery – Script Code 
   var bsrpg_thumbSize = 120; 
   var bsrpg_showTitle = true; 
+
 function bsrpGallery(root) {
     var entries = root.feed.entry || [];
     var html = ['<div class="bsrp-gallery nopin" title="Get this from www.marvelmurugan.com">'];
@@ -22,12 +23,4 @@ function bsrpGallery(root) {
     html.push('</div>');
     document.write(html.join(""));
 }
-
-// css Code 
-.bsrp-gallery {padding:15px; clear:both;}
-.bsrp-gallery:after {content: "";display: table;clear: both;}
-.bsrp-gallery .bs-item a {position: relative;float:left;margin: 0 15px 15px 0 !important;text-decoration:none;}
-.bsrp-gallery .bs-item .ptitle {background: rgba(0, 0, 0, 0.5); background: #7f7f7f\9; display: block; clear: left; font-size: 13px; line-height:1.3em; height: 2.6em; position: absolute; text-align: left; bottom: 5%; color:#ff3; padding:2px 5px; word-wrap: break-word; overflow:hidden;}
-.bsrp-gallery a img {background: #eee; float: left; padding: 5px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); transition: background-color 0.4s; -webkit-transition: background-color 0.4s; -moz-transition: background-color 0.4s;}
-.bsrp-gallery a:hover img {background: #ee7e22;}
 
