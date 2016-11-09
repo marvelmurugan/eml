@@ -1,4 +1,3 @@
-<script>
 // Blogger Recent Posts Gallery – Script Code 
   var bsrpg_thumbSize = 120; 
   var bsrpg_showTitle = true; 
@@ -23,8 +22,6 @@ function bsrpGallery(root) {
     html.push('</div>');
     document.write(html.join(""));
 }
-</script>
-
 <style>
 // css Code 
 .bsrp-gallery {padding:15px; clear:both;}
