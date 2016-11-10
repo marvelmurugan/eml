@@ -12,7 +12,7 @@ var tableWidth = 100;
 var cellWidth = 120;
 var cellHeight = 90;
 
-function recent(json) {
+function lblshow(json) {
     document.write('<style type="text/css">');
     document.write('.sitemap-container {width: 100%;}');
     document.write('.sitemap-container:hover {background-color:#fafafa;}');
